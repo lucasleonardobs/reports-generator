@@ -24,7 +24,7 @@ defmodule ReportsGenerator do
   end
 
   def build_from_many(filenames) when not is_list(filenames) do
-    raise {:error, "filenames must be a list"}
+    {:error, "filenames must be a list"}
   end
 
   def build_from_many(filenames) do
